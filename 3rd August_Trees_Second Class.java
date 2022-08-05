@@ -196,7 +196,7 @@ void inOrder(Node root)
 
 
 
-// Preorder: Left -> Root -> Right
+// Preorder: Root -> Left -> Right
 void preOrder(Node root)
 {
   if (root == null)
@@ -210,7 +210,7 @@ void preOrder(Node root)
 
 
 
-// Postorder: Left -> Root -> Right
+// Postorder: Left -> Right -> Root
 void postOrder(Node root)
 {
   if (root == null)
