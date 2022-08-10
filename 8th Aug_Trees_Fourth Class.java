@@ -54,7 +54,7 @@ BST    : left < root < right
 
 
 Note:
-(1) Inorder Traversal of a BST will ALWAYS give a Sorted Array
+(1) Inorder Traversal of a BST will ALWAYS give a Strictly Increasing Sorted Array
 (2) Left Most Child: Smallest
 (3) Right Most Child: Largest
 
@@ -112,7 +112,7 @@ int minValue(Node root)
 
 Solution:
 
-Smallest Element ---> Leftmost Node in BST
+Smallest Element ---> Leftmost Node in a BST
 
 Approach:
 Go to Leftmost Node and print it
@@ -170,7 +170,7 @@ BT: Duplicates Allowed
 
                   15
               10       20    
-           8     14  16  24  
+           8     12  16  24  
 
 
 target = 28
@@ -273,8 +273,8 @@ Kth Largest value = return arr[N-k+1]
 T - O(N) - Inorder
 S - O(N) - Array
 
-arr[10^9] - Stack Overflow
-Inorder Traversal: O(N) = 10^9 Traversals
+arr[10^9] - Stack Overflow - Space Complexity: Overhead
+Inorder Traversal: O(N) = 10^9 Traversals - Time Complexity: Overhead
 
 
 N = 10^9
