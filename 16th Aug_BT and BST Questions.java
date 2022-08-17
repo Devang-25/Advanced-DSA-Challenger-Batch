@@ -43,7 +43,7 @@ Given a binary tree, determine if it is height-balanced.
 
 For this problem, a height-balanced binary tree is defined as:
 
-a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+a binary tree in which the left and right subtrees of "every node" differ in height by no more than 1.
 
  
 
@@ -109,7 +109,7 @@ class Solution {
             result = false;
         
         // Height Balanced: diff <= 1, recur for next node
-        return 1 + Math.max(leftHeight, rightHeight);        
+        return 1 + Math.max(leftHeight, rightHeight);
     }
 }
 
@@ -200,6 +200,19 @@ Approach:
 
 
 
+Two Ways:
+
+(1) Store Inorder Traversal in an ArrayList
+Find the Min Adjacent Values Difference
+
+TC - O(N), SC - O(N)
+
+(2) Dont Store Inorder Traversal in an ArrayList, 
+Use a Variable
+Find the Min Adjacent Values Difference
+
+TC - O(N), SC - O(1)
+
 
 Edge Case:
 
@@ -268,3 +281,9 @@ https://leetcode.com/problems/search-in-a-binary-search-tree:
 
 LC - 938
 https://leetcode.com/problems/range-sum-of-bst: 
+
+
+
+
+
+
