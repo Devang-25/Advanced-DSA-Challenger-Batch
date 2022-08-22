@@ -18,10 +18,10 @@ TODO:
 
 Detect Cycle in a Graph - 
 BFS in Disconnected Graphs - 
+DFS - IMP
 
 Advanced: (30%)
 
-DFS - IMP
 MST- Prim and Kruskal - IMP
 Shortest Distance - Dijkstra, Bellman Ford, Floyd Warshall - IMP
 Topological Sort - CP
@@ -58,7 +58,7 @@ Target: 9-10
 Master any DS/Algo:
 
 - What (Use Case) - DONE
-- Why (Applications/Need)
+- Why (Applications/Need) - DONE
 - How (Coding/Implementation)
 
 
