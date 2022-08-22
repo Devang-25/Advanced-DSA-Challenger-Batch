@@ -128,7 +128,7 @@ class Solution {
             
             for (i=0; i<size; i++)
             {
-                TreeNode temp = q.poll();
+                TreeNode temp = q.poll(); //q.pop();
                 levelNodeList.add(temp.val);
                 
                 // Recur on Left Subtree
@@ -193,7 +193,8 @@ class Solution:
 # Trick    
 # -1 * -1 * -1......Even Time = 1    
 # -1 * -1 * -1......Odd Times = -1
-# arr[::-1]: reverse
+# arr[::-1]: reverse (R to L)
+# arr[::1]: same (L to R)
 
 
 
