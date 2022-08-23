@@ -95,6 +95,8 @@ Else, value = -INF (-10^9: int)
 V = 5
 Matrix = VxV = 5x5 
 
+Rows: Source
+Columns: Destination
 
 D  0   1   2   3   4
 
