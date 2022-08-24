@@ -101,7 +101,7 @@ d["b"] = 2
 
 print(d["a"])
 print(d["b"])
-print(d["c"]) # {c - "Not Present"}
+print(d["c"]) # {c - []}
 
 
 OP:
@@ -118,7 +118,7 @@ Why We need Default Dictionary?
 
 - We need a Structure like:
 
-vertex: [list of connected vertex]
+vertex: [list of directly connected vertex]
 
 Eg: 1 - [0 2 4]
 
@@ -134,6 +134,13 @@ Initially, Need Structure like
 
 0 - []
 1 - []
+
+Before:
+vertex: []
+
+After Traversal:
+vertex: [list of directly connected vertex]
+
 
 Later, I will fill the empty list values
 
@@ -194,10 +201,10 @@ def addEdge(graph, src, dest):
 #Structure: 
 #    key -> [list]
 #    graph[src] -> []
-#    graph[src].append(dest) -> [,dest]
+#    graph[src].append(dest) -> [___,dest]
 
 
-#a---c---b--e
+# a---c---b--e
 #    |
 #    d
 
@@ -236,7 +243,7 @@ def addEdge(graph, src, dest):
 #    graph[src].append(dest) -> [,dest]
 
 
-#delhi -> bangalore -> hyderabad
+# delhi -> bangalore -> hyderabad
 #           \ | /
 #            Pune
         
@@ -276,6 +283,7 @@ class Graph
     // Weighted Graph
     ArrayList<ArrayList<HashMap<Integer, Integer>>> adj;
     // 1 - [(0:20), (2:40), (4: 60)]
+    // Hashmap - key : directly connected vertex, value: weight
     
     // Structure:
     // vertex -> []: Empty List   
@@ -295,7 +303,7 @@ class Graph
         this.adj.get(src).get(this.adj.get(src).size()-1).put(dest, weight); // 1-> [(2,20)]
         // C++: adj[src].push({dest, weight})
         
-        //1 -> [(0:20), (1:40)] // get(dest).size()-1
+        //1 -> [(0:20), (1:40)] // get(dest).size()-1 -> Append at End
 
         this.adj.get(dest).add(new HashMap<>()); // 1 -> [(key,value)]
         this.adj.get(dest).get(this.adj.get(dest).size()-1).put(src, weight); 
@@ -468,6 +476,17 @@ Vertex: 3
 Connected With: 4 Weight: 40
  
 Vertex: 4
+
+
+
+
+
+
+
+
+
+
+
 
 
 
