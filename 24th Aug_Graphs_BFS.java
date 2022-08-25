@@ -169,6 +169,9 @@ class Graph:
         while queue: # Till All vertices are traversed
             source = queue.pop(0)
             print(source, end = " ") # print source
+//                    0: [1 2]
+ //                   graph[0] -> [1,2]
+
             for neighbour in self.graph[source]: # for all directly connected vertices from source
                 if visited[neighbour] == False: # not already visited
                     queue.append(neighbour)
@@ -187,8 +190,7 @@ g.addEdge(3,3)
 print("BFS from 0: ")
 g.BFS(0)
         
-        
-        
+
         
         
 OP:
