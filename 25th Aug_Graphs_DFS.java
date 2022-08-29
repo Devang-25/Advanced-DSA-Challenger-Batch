@@ -401,7 +401,7 @@ class Graph:
         # DFS - Recur on Depth for Current Vertex
         for neighbour in self.graph[vertex]:
             if neighbour not in visited:
-                self.DFSUtil(neighbour, visited)
+                self.DFSUtil(neighbour, visited) # Recurring on Depth
                             
     def DFS(self, source):
         visited = set()
