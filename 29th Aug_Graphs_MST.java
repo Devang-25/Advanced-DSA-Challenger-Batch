@@ -16,6 +16,7 @@ BFS - IMP- DONE
 
 Indegree - DONE
 Outdegree - DONE
+LC - Town Judge - DONE
 
 Detect Cycle in a Graph - 
 BFS in Disconnected Graphs - - DONE
@@ -24,7 +25,7 @@ Advanced: (30%)
 
 
 DFS - IMP - DONE
-Connected Components in A Graph - DFS 
+Connected Components in A Graph - DFS - TODO
 
 
 MST- 
@@ -33,6 +34,8 @@ MST-
 
 TODO:
 - Prim and Kruskal - IMP - WIP
+- LC - Find Centre of Graph
+- Connected Components in A Graph - DFS - TODO
 
 Shortest Distance - Dijkstra, Bellman Ford, Floyd Warshall - IMP
 Topological Sort - CP
@@ -117,7 +120,7 @@ Q: Can Graph can have Multiple MST?
 Ans: YES
 
 
-(Eg: Make Every Edge Wight - SAME)
+(Eg: Make Every Edge Weight - SAME)
 (Every Spanning Tree will become MST)
 
 
@@ -255,7 +258,7 @@ If you are at 1, you can go to 10(Right) or 100(Down)
 
 According to Greedy, "ALWAYS" go to 100 because MAX(10,100) = 100
 
-At the current state, Choose the BEST SOLUTION there, Dont think about Future
+"At the current state, Choose the BEST SOLUTION there, Dont think about Future"
 
 
 Greedy Solution: 1 -> 100 (10/100) -> 1000 (50/1000) -> 90 (80/90) -> 500
