@@ -115,9 +115,9 @@ val = 4       Edge = 2-3       No of Edges: 1      W: 4         Cycle: NO
 
 val = 5       Edge = 3-0       No of Edges: 2      W: 4+5       Cycle: NO
 
-val = 6       Edge = 0-2       No of Edges: 3        W: 4+5+6   Cycle: YES - NOT INCLUDE IN MST
+val = 6       Edge = 0-2       No of Edges: 3      W: 4+5+6     Cycle: YES - NOT INCLUDE IN MST
 
-val = 10      Edge = 0-1      No of Edges: 3      W: 4+5+10    Cycle: NO - Included
+val = 10      Edge = 0-1       No of Edges: 3      W: 4+5+10    Cycle: NO - Included
 
 
 No of Edges = 3 = V-1 : STOP
@@ -243,7 +243,7 @@ class Solution
 {
     public int findCenter(int[][] edges) 
     {
-        int startVertex = -1;
+    int startVertex = -1;
         
     if (edges[0][0] == edges[1][0] || edges[0][0] == edges[1][1])
             startVertex = edges[0][0];
